@@ -61,10 +61,10 @@ struct {
 } ft_errors[] =
 
 try{
-    #include <freetype2/fterrors.h>
+    #include <freetype/fterrors.h>
 }
 catch(...){
-    #include <freetype/fterrors.h>
+    #include <freetype2/fterrors.h>
 }
 /* -------------------------------------------------------------------- */
 /* font objects */

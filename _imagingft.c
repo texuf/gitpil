@@ -60,8 +60,12 @@ struct {
     const char* message;
 } ft_errors[] =
 
-#include <freetype2/fterrors.h>
-
+try{
+    #include <freetype2/fterrors.h>
+}
+catch(...){
+    #include <freetype/fterrors.h>
+}
 /* -------------------------------------------------------------------- */
 /* font objects */
 
